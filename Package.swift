@@ -22,7 +22,7 @@ let package = Package(
         .target(
             name: "MyLibrary",
             dependencies: [],
-            exclude:["test.md"], resources:[.process("test.txt")]),
+            exclude:["test.md"], resources:[.process("Resources")]),
         .testTarget(
             name: "MyLibraryTests",
             dependencies: ["MyLibrary"]),
