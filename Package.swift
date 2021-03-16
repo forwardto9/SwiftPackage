@@ -11,7 +11,9 @@ let package = Package(
         .library(
             name: "MyLibrary",
             targets: ["MyLibrary"]),
-        .library(name: "MyAssets", targets: ["MyAssets"]),
+        .library(
+            name: "MyAssets",
+            targets: ["MyAssets"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -23,10 +25,12 @@ let package = Package(
         .target(
             name: "MyLibrary",
             dependencies: [],
-            exclude:["test.md"], resources:[.process("Resources"), .process("Images")]),
-        .target(name: "MyAssets",
-                dependencies: [],
-                resources: [.process("Resources")]),
+            exclude:["test.md"],
+            resources:[.process("Resources"), .process("Images")]),
+        .target(
+            name: "MyAssets",
+            dependencies: [],
+            resources: [.process("Resources")]),
         .testTarget(
             name: "MyLibraryTests",
             dependencies: ["MyLibrary"]),

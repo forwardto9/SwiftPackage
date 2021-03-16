@@ -10,6 +10,6 @@ import Foundation
 #if canImport(UIKit)
 import UIKit
 
-public let icon = UIImage(named: "icon58", in: Bundle.module, compatibleWith: nil)
+public let icon = UIImage(named: "avatar", in: Bundle.module, compatibleWith: nil)
 
 #endif
