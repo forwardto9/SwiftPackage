@@ -26,7 +26,7 @@ let package = Package(
             name: "MyLibrary",
             dependencies: [],
             exclude:["test.md"],
-            resources:[.process("Resources"), .process("Images")]),
+            resources:[.process("Resources"), .process("MyImages")]),
         .target(
             name: "MyAssets",
             dependencies: [],
