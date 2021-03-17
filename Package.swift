@@ -26,7 +26,7 @@ let package = Package(
             name: "MyLibrary",
             dependencies: [],
             exclude:["test.md"],
-            resources:[.process("Resources"), .process("images")]),
+            resources:[.process("Resources"), .process("images"), .copy("test.txt")]),
         .target(
             name: "MyAssets",
             dependencies: [],
